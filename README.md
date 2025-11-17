@@ -4,7 +4,7 @@ DishSpot transforms your iPhone into an intelligent spatial assistant that finds
 
 | Mugs | Silverware | Plates | DishCaddie |
 |:---:|:---:|:---:|:---:|
-| ![Mugs](Screenshots/IMG_0333.PNG) | ![Silverware](Screenshots/IMG_0334.PNG) | ![Plates](Screenshots/IMG_0335.PNG) | ![DishCaddie](Screenshots/IMG_0336.PNG) |
+| ![Mugs](Screenshots/IMG_0333.PNG) | ![Silverware](Screenshots/IMG_0335.PNG) | ![Plates](Screenshots/IMG_0336.PNG) | ![DishCaddie](Screenshots/IMG_0337.PNG) |
 
 ## What DishSpot Does
 
