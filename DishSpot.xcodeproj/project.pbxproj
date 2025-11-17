@@ -6,11 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C66EECAD2ECB730100486B90 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C66EECAC2ECB730100486B90 /* README.md */; };
+		C6DF5B9F2ECA10FC0066A8B0 /* Roboflow in Frameworks */ = {isa = PBXBuildFile; productRef = C6DF5B9E2ECA10FC0066A8B0 /* Roboflow */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		C66EECAC2ECB730100486B90 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C6DF5B8B2ECA09BB0066A8B0 /* DishSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DishSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C66EECAE2ECB751B00486B90 /* Screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		C6DF5B8D2ECA09BB0066A8B0 /* DishSpot */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DishSpot;
@@ -23,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DF5B9F2ECA10FC0066A8B0 /* Roboflow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +44,8 @@
 		C6DF5B822ECA09BB0066A8B0 = {
 			isa = PBXGroup;
 			children = (
+				C66EECAE2ECB751B00486B90 /* Screenshots */,
+				C66EECAC2ECB730100486B90 /* README.md */,
 				C6DF5B8D2ECA09BB0066A8B0 /* DishSpot */,
 				C6DF5B8C2ECA09BB0066A8B0 /* Products */,
 			);
@@ -61,10 +75,12 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				C66EECAE2ECB751B00486B90 /* Screenshots */,
 				C6DF5B8D2ECA09BB0066A8B0 /* DishSpot */,
 			);
 			name = DishSpot;
 			packageProductDependencies = (
+				C6DF5B9E2ECA10FC0066A8B0 /* Roboflow */,
 			);
 			productName = DishSpot;
 			productReference = C6DF5B8B2ECA09BB0066A8B0 /* DishSpot.app */;
@@ -94,6 +110,9 @@
 			);
 			mainGroup = C6DF5B822ECA09BB0066A8B0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C6DF5B9D2ECA10FC0066A8B0 /* XCRemoteSwiftPackageReference "roboflow-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C6DF5B8C2ECA09BB0066A8B0 /* Products */;
 			projectDirPath = "";
@@ -109,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66EECAD2ECB730100486B90 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +271,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TNJ23G3B5N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DishSpot uses camera to understand your kitchen";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +304,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TNJ23G3B5N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DishSpot uses camera to understand your kitchen";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6DF5B9D2ECA10FC0066A8B0 /* XCRemoteSwiftPackageReference "roboflow-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roboflow/roboflow-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6DF5B9E2ECA10FC0066A8B0 /* Roboflow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6DF5B9D2ECA10FC0066A8B0 /* XCRemoteSwiftPackageReference "roboflow-swift" */;
+			productName = Roboflow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6DF5B832ECA09BB0066A8B0 /* Project object */;
 }
